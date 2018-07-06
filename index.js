@@ -16,7 +16,7 @@ class App extends Component {
     const layerNodeLimit = 80;
     const groups = [];
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 1600; i++) {
       const eleX = Math.round(wWidth * Math.random());
       const eleY = Math.round(wHeight * Math.random());
       circles.push(<CircleComponent x={eleX} y={eleY} index={i} key={i} />);

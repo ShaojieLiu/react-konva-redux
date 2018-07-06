@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html"
+  },
   "dependencies": {
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "konva": "^2.1.6",
+    "parcel": "^1.9.4",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-reconciler": "^0.12.0",
