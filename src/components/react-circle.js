@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Circle, Group } from "../lib/react-konva";
+import { Circle, Group } from "../../lib/react-konva";
 
 export class CircleComponent extends Component {
   constructor() {

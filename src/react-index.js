@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 
-import { Stage, Layer, Text } from "./lib/react-konva";
+import { Stage, Layer, Text } from "../lib/react-konva";
 import { Provider } from "react-redux";
 import { isEmpty } from "lodash";
 import store from "./store";
 
-import { CircleConnected as CircleComponent } from "./components/circle";
+import { CircleConnected as CircleComponent } from "./components/react-circle";
 
 class App extends Component {
   render() {
@@ -16,7 +16,7 @@ class App extends Component {
     const layerNodeLimit = 80;
     const groups = [];
 
-    for (let i = 0; i < 1600; i++) {
+    for (let i = 0; i < 401; i++) {
       const eleX = Math.round(wWidth * Math.random());
       const eleY = Math.round(wHeight * Math.random());
       circles.push(<CircleComponent x={eleX} y={eleY} index={i} key={i} />);
